@@ -19,8 +19,8 @@ class ImageConverter:
     # Resize the image given by input_path and overwrite to the same path
     def resize_image(self, img_path):
         # Screen target size dims
-        target_width = 800
-        target_height = 480
+        target_width = 600
+        target_height = 448
 
         with Image.open(img_path) as img:
             img = ImageOps.exif_transpose(img)

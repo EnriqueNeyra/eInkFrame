@@ -12,7 +12,7 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 LIB_PATH = os.path.join(SCRIPT_DIR, 'lib')
 PIC_PATH = os.path.join(SCRIPT_DIR, 'pic')
 sys.path.append(LIB_PATH)
-from lib.waveshare_epd import epd7in3e
+from lib.waveshare_epd import epd5in65f
 
 class Display:
 
@@ -20,7 +20,7 @@ class Display:
         self.last_display_time = time.time()
         self.last_selected_image = None
         self.rotation = 0
-        self.epd = epd7in3e.EPD()
+        self.epd = epd5in65f.EPD()
         self.epd.init()
 
 
