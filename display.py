@@ -100,7 +100,7 @@ class Display:
         qr_img = qr.make_image(fill_color="black", back_color="white").convert("RGB")
         qr_img = qr_img.resize((300, 300))
         
-        full_img = Image.new("RGB", (800, 480), color="white")
+        full_img = Image.new("RGB", (600, 448), color="white")
 
         qr_x = (full_img.width - qr_img.width) // 2
         qr_y = (full_img.height - qr_img.height) // 2
